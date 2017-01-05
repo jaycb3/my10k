@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+                edit
+        </title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style4.css')}}">
+</head>
+<body>
+        <form name="edit_form" action="#" method='post'>
+        <p>ID:         {{ item.id }}</p>
+        <p>Subject:</p>
+        <input name="subject" type="text" placeholder='{{item.subject}}'><input type="submit" value="Edit"><br>
+        <p>Start Time:</p>
+        <input name="start_time" type="text" placeholder="{{item.start_time}}"><input type="submit" value="Edit"><br>
+        <p>Stop Time:</p>
+        <input name="stop_time" type="text" placeholder="{{item.stop_time}}"><input type="submit" value="Edit"><br>
+        <p>Total Minutes:</p>
+        <input name="total_minutes" type="text" placeholder="{{item.total_minutes}}"><input type="submit" value="Edit"><br>
+        <p>Goal:</p>
+         <input name="goal" type="text" placeholder="{{item.goal}}"><input type="submit" value="Edit"><br>
+        <p>Comments:</p>
+         <input name="comments" type="text" placeholder="{{item.comments}}"><input type="submit" value="Edit"><br>
+
+</form>
+</body>
+</html>

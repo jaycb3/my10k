@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>showRecord</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style4.css')}}">
+</head>
+<body>
+        <p>ID:         {{ item.id }}</p>
+        <p>Subject:</p>
+        {{item.subject}}
+        <br>
+        <p>Start Time:</p>
+        {{item.start_time}}
+        <br>
+        <p>Stop Time:</p>
+        {{item.stop_time}}
+        <br>
+        <p>Total Minutes:</p>
+        {{item.total_minutes}}
+        <br>
+        <p>Goal:</p>
+        {{item.goal}}
+        <br>
+        <p>Comments:</p>
+        {{item.comments}}
+        <br>
+</body>
+</html>
