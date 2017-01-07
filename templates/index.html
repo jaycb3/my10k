@@ -3,13 +3,14 @@
 <head>
         <title>orderup</title>
         <head>
-                <link rel="stylesheet" type="text/css" href="static/style1.css">
+                <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style1.css')}}">
         </head>
                 <body>
                         COVER PAGE
                         <ul>
                                 <li><a href="/login">Login</a></li>
                                 <li><a href="/register">Register</a></li>
+                                <li><a href="{{url_for('records')}}">View Records</a></li>
                         </ul>
                 </body>
         <footer>

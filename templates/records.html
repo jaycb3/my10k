@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>records</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style1.css')}}">
+</head>
+<body>
+        {%for i in items%}
+        <p><h4>ID: {{ i.id }}</h4><p>
+                <p>
+                <ul>
+                        <li>Subject: {{ i. subject }}</li>
+                        <li>Start Time: {{ i.start_time }}</li>
+                        <li>Stop Time: {{ i.stop_time }}</li>
+                        <li>Total Minutes: {{ i.total_minutes }}</li>
+                        <li>Goal: {{ i.goal }}</li>
+                        <li>Comments: {{ i.comments }}</li>
+                </ul>
+        </p>
+        {%endfor%}
+</body>
+</html>

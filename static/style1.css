@@ -1,0 +1,10 @@
+ul {
+        text-decoration: none;
+        border: 1px solid #cc9900;
+}
+
+li {
+        list-style-type: none;
+        text-decoration: none;
+        border: 1px solid #ff9;
+}
